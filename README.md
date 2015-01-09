@@ -1,7 +1,7 @@
 # jquery.LiteAlert
 jQuery plugin LiteAlert for beautiful alerts. Demo: [http://lux-blog.org/storage/jquery-LiteAlert/] (http://lux-blog.org/storage/jquery-LiteAlert/)
 
-![Alt text](screenshow.png "Plugin in work")
+![Alt text](screenshot.png "Plugin in work")
 
 
 ## Installation
