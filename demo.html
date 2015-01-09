@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+	<head lang="en">
+		<meta charset="UTF-8">
+		<title>JsMultiLang Framework demo</title>
+		<script type="text/javascript" src="js/jquery.1.11.min.js"></script>
+		<script type="text/javascript" src="js/jquery-lite-alert.js"></script>
+		<link href="css/style.css" rel="stylesheet" type="text/css">
+	</head>
+	<body>
+		<div class="lite-alert-box"></div>
+
+		<button onclick="Alert ()">Alert</button>
+		<script>
+			$.laConfig ({
+				classes : {
+					box: 'lite-alert-box',
+					item: 'lite-alert-item',
+					close: 'lite-alert-item-close',
+					header: 'lite-alert-item-header',
+					content: 'lite-alert-item-content',
+					footer: 'lite-alert-item-footer'
+				},
+				speed: 200
+			});
+			
+			function Alert () {
+				$.la ('New message', 'Sth lorem ipsum text for plugin test / ' + Math.floor(Math.random() * 100));
+			}
+		</script>
+
+
+	</body>
+</html>
