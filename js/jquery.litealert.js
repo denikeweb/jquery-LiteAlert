@@ -1,6 +1,6 @@
 /*!
  * jQuery Lite Alert Plugin v1.0
- * https://github.com/denikeweb/jquery-lite-alert
+ * https://github.com/denikeweb/jquery-LiteAlert
  *
  * Copyright 2015 Denis Dragomirik
  * Released under the MIT license
@@ -26,6 +26,10 @@
 		if (contentText == undefined) contentText = '';
 		if (footerText  == undefined) footerText  = '';
 		jQueryObjBox = $('.' + config.classes.box);
+		if (jQueryObjBox.length == 0) {
+			$('body').append ('<div class="' + config.classes.box + '"></div>');
+			jQueryObjBox = $('.' + config.classes.box);
+		}
 		jQueryObjBox.prepend (
 			'<div class="' + config.classes.item + '" style="display:none">' +
 				'<div class="' + config.classes.close + '"></div>' +
